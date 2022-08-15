@@ -1,0 +1,59 @@
+*{margin:0;
+    padding:auto;
+    box-sizing:border-box}
+
+form{width:100% ;
+padding: 10px;
+display: flex;
+flex-direction:column;}
+
+input,
+select
+{ width: 100px;
+height: 30px;
+margin: 10px 0;
+}
+
+textarea{height: 200px;
+resize: none;
+width: 100%;
+margin:10px 0;
+}
+
+.genre{ display: flex;
+    align-items: center;
+}
+
+.genre> label{width: 50px;}
+
+input[type="radio"],
+input[type="checkbox"]{width: 20px; margin: 0 10px}
+
+fieldset{ padding: 10px;
+background: gray;
+margin: 10px 0}
+
+legend{text-align: center;
+    color: red;
+    width: 200px;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    background: white;
+}
+
+input[type="submit"]{width: 100px;
+background: red;
+cursor: pointer;
+border: 1px solid gold;
+margin: auto;
+color: white;
+font-size: 20px;}
+
+input[type="submit"]:hover{background: green;}
+
+input:valid{ border:3px solid green}
+
+input:invalid{border: 3px solid red}
+
+/* select{background: orange;} */

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Velo en Seine</title>
+    <link rel="icon" type="image/gif" href="http://example.com/img/A.gif" sizes="32X32" />
+    <meta name="description"
+        content="Decouvrir la Seine St denis dans les parcs ou chemin pres de chez vous, ou faire du velo en seine st denis ?" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/bouton.css">
+
+    <script src="assets/js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/162a063550.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+    <!-- <script>
+        alert("Bienvenue, voici un de mes exercices !");
+    
+    </script> -->
+
+    <header>
+        <a href="index.html"><img src="assets/img/logo.svg" alt="" /></a>
+
+        <nav class="navbar dark-mode" role="navigation">
+            <ul class="navbar__links">
+                <li class="navbar__link first"><a href="#">Accueil</a></li>
+                <li class="navbar__link second"><a href="#">Services</a></li>
+                <li class="navbar__link third"><a href="#">Missions</a></li>
+                <li class="navbar__link four"><a href="#">Nous recrutons</a></li>
+                <li class="navbar__link fifth"><a href="#">Contact</a></li>
+            </ul>
+            <button class="burger">
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <section>
+        <hgroup>
+            <h1>Velo <span id="en">En</span><span id="seine">Seine</span></h1>
+            <h2>
+                Location et découverte à velo proche de chez vous en Seine Saint Denis
+            </h2>
+        </hgroup>
+
+        <a href="">
+            <figure><img src="assets/img/site-velo.png" alt="Velo en Seine" id="slide" />
+            </figure>
+        </a>
+    </section>
+
+    <main>
+
+
+        <section></section>
+        <section data-aos="flip-left">
+
+            <!-- section 1-->
+            <section class="apple">
+                <article class="h">
+                    <figure><img src="assets/img/profil.jpg" alt="Mohamed Gloire Glody"></figure>
+                    <p>154K Abonnée | 21 Abonnements </p>
+                    <h2>Mohamed_Gloire</h2>
+                    <a href="inscrire.html">S'abonner</a>
+                    <div class="paragraf">
+                        <p>
+                            <strong>18</strong>
+                            Livres
+
+                        </p>
+                        <p>
+                            <strong>12382</strong>
+                            Pages
+                        </p>
+                        <p>
+                            <strong>27%</strong>
+                            Objectif
+
+                        </p>
+                    </div>
+                </article>
+
+                <article class="b">
+
+                    <button id="bouton">
+                        <div id="barre"></div>
+                
+                          <a href="">En train de lire</a>
+                          <a href="">Lu</a>
+                          <a href="">A lire</a>
+                          <a href="">Wishlist</a>
+                        
+                       </button>
+
+                    </div>
+
+
+                </article>
+
+
+            </section>
+
+            <!-- section Incription -->
+            <section class="apple" alt="fiche inscription">
+
+
+                <form action="contact.php" method="post">
+
+
+                    <!-- fieldset -->
+                    <fieldset>
+                        <legend>Etat Civil</legend>
+
+
+                        <div class="genre">
+                            <label for="">Femme</label>
+                            <input type="radio" name="genre" id="femme">
+
+                            <label for="">Homme</label>
+                            <input type="radio" name="genre" id="homme">
+                        </div>
+                        <!-- pour mettre son nom -->
+                        <!-- <label for="nom">Votre Nom</label>
+            <input type="text" name="nom" id="nom" > -->
+
+                        <input type="text" name="nom" id="nom" placeholder="Votre nom" required
+                            aria-placeholder="Votre nom">
+
+                        <input type="text" name="prenom" id="prenom" placeholder="Votre prenom" required
+                            aria-placeholder="Votre prenom">
+
+                    </fieldset>
+
+                    <!-- fieldset -->
+                    <fieldset>
+                        <legend>Vos Coordonnées</legend>
+                        <input type="email" name="email" id="=email" placeholder="Votre email"
+                            aria-placeholder="Votre email" required autocomplete="">
+
+                        <input type="tel" name="phone" id="telephone" placeholder="Votre Téléphone"
+                            aria-placeholder="Votre Téléphone" required autocomplete="">
+
+                    </fieldset>
+
+                    <!-- fieldset -->
+                    <fieldset>
+                        <legend>Vos besoins</legend>
+
+                        <select name="objet" id="objet">
+
+                            <option value="#">Selectionner</option>
+
+                            <option value="rdv"> Rendez vous</option>
+                            <option value="call"> Telephoner</option>
+                            <option value="come"> Venir</option>
+                            <option value="slim"> Jean Homme Prada</option>
+
+
+                        </select>
+
+                        <textarea name="message" id="msg" required
+                            placeholder="Merci de nous expliquer vos besoins ..."></textarea>
+                    </fieldset>
+
+                    <!-- fieldset -->
+                    <fieldset>
+                        <legend>Vos Competences</legend>
+
+                        <div class="genre">
+                            <label for="html">HTML</label>
+                            <input type="checkbox" id="html">
+
+                            <label for="css">CSS</label>
+                            <input type="checkbox" id="css">
+
+                            <label for="js">JS</label>
+                            <input type="checkbox" id="js">
+                        </div>
+
+                    </fieldset>
+
+                    <!-- capcha -->
+                    <label for="capcha">
+                        Merci de Repondre à la question</label>
+
+                    <input type="text" id="capcha" placeholder="2 + 2" pattern="4" required>
+
+
+                    <input type="submit" value="envoyer">
+                </form>
+
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <div id="toggle">
+        <i class="indicator"></i>
+    </div>
+    <!-- scprit -->
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/bouton.js"></script>
+
+    <section id="modal">
+        <h2>Alerte aux mineurs</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatum, ratione voluptatem pariatur
+            perferendis fuga sed, doloremque consectetur facilis eveniet et maxime expedita tempora nihil. Perspiciatis
+            beatae eius soluta rem.</p>
+        <a href="#modal">Ok d'accord</a>
+    </section>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+
+/* }
+
+nav a {
+    position: relative;
+    color: red;
+    text-decoration: none;
+    margin: 0 12px;
+    padding: 0 12px;
+  }
+  
+  nav {
+    position: relative;
+    display: flex;
+  }
+  
+  #barre {
+    position: absolute;
+    left: 0;
+    height: 4vh;
+    width: 0;
+    background: green;
+    bottom: -10px;
+    border-radius: 5px;
+    transition: 0.5s;
+  } */
+
+ 
+button a {
+    position: relative;
+    text-decoration: none;
+    margin: 0 12px;
+    padding: 0 12px;
+    text-align: center;
+  }
+  
+  button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.856);
+    height: 5vh;
+    border-radius: 50px;
+    overflow: hidden;
+    
+    
+  }
+  
+  #barre {
+    position: absolute;
+    left: 0;
+    height: 48px;
+    width: 0;
+    background: linear-gradient(90deg, rgba(234, 26, 2, 1)1%, rgba(69, 88, 252, 1) 100%);
+    bottom: 1px;
+    border-radius: 50px;
+    transition: 0.5s;
+  }
